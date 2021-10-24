@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.cards{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+.grandparent{
+    padding: 7.5% 7.7%; 
+    /* padding-bottom: 7.5%; */
+}
+.parent{
+    width:90%;
+    margin:auto;
+    /* border: 3px solid black; */
+    border-radius: 50px;
+   box-shadow: 1px 4px 8px 0 rgba(129, 93, 93, 0.2), 1px 6px 20px 0 rgba(0, 0, 0, 0.29);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-radius: 2%; */
+    /* background: white; */
+    background-image: linear-gradient(white, #E3FDFD);
+}
+
+
+/*********Root Style*************/
+
+#root{
+    background-color: #71C9CE;
+
+}
+
+
+/*******track title**********/
+.TrackHead{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.TrackName{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 900;
+    font-size: 2.75rem !important;
+    color: #314E52 !important;
+}
+
+.vlAndTrack{
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+}
+/**************Card***********/
+.cardBoarder{
+    border-radius: 10% 10% 10% 10% !important;
+    /* padding: 0.75rem 0 0.75rem !important; */
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    height: 200px;
+    border:1.5px solid grey !important;
+   
+}
+
+.cardTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem !important;
+    font-weight: 800;
+}
+/* .bgTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+.cardBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-size: 1.25rem !important;
+}
+
+
+.cardDescriptionFont{
+    font-size: 1.25rem;
+}
+
+/*******Like Button********/
+.like {
+    color: #FF3D68;
+    outline: none;
+    background: white ;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 10%;
+     box-shadow: 0.5px 0.5px 2px rgb(0 0 0 / 0.2); 
+    height: 40px;
+    width: 100px;
+    transition: box-shadow 0.3s;
+    margin-right: 5%;
+  }
+
+  .like:hover {
+    box-shadow: 4px 3px 10px rgb(0 0 0 / 0.2);
+ }
+
+ /***************vertical Line**************/
+ .vl {
+    border-left: 2px dashed #314E52;
+    height: 50px;
+  }
+
+  /**************Snow Effect***************/
+  .snow {
+	position: fixed;
+	height: 130vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}

@@ -1,0 +1,303 @@
+/* #71C9CE #A6E3E9 #CBF1F5  #E3FDFD #0dcaf0*/
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+#bg {
+   height: 100vh;
+   width: 100wh;
+   background-color: #71C9CE;
+}
+
+#logo {
+   text-decoration: none;
+   padding-left: 2%;
+   color:#be107c;
+   font-size: larger;
+}
+
+.container {
+   height:85vh;
+   width:90vw;
+   background-image: linear-gradient(white, #E3FDFD);
+   position: absolute;
+   top: 7.5%;
+   left: 7.7%;
+   border-radius: 50px;
+   box-shadow: 1px 4px 8px 0 rgba(129, 93, 93, 0.2), 1px 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+#pic img{
+   opacity: 0.7;
+   position: absolute;
+   top:28%;
+   left: 55%;
+   height:47vh;
+   border-radius: 50px;
+   transform: rotate(-5deg);
+   box-shadow: rgba(136, 165, 191, 0.6) 5px 3px 7px 4px, rgba(136, 165, 191, 0.5) 7px 5px 9px 6px, rgba(136, 165, 191, 0.4) 9px 7px 11px 8px, rgba(136, 165, 191, 0.3) 11px 9px 13px 10px;
+}
+
+#signout {
+   text-decoration: none;
+   color:#143e41;
+   position: absolute;
+}
+
+/********** COLOR CHANGING EFFECT **********/
+
+@keyframes color-change {
+   0% {
+      color:#143e41;
+   }
+ 
+   25% {
+      color:#127d85;
+   }
+ 
+   50% {
+      color:#35d5f1;
+   }
+ 
+   75% {
+      color:#619599;
+   }
+ 
+   100% {
+      color:#143e41;
+   }
+ }
+
+ /*********** MAIN CONTENT ************/
+
+ .typewriter {
+   position: absolute;
+   top:30%;
+   left: 20%;
+   color:#18848a;
+}
+
+.typewriter p {
+   padding-top: 10px;
+   font-size: 115%;
+   color:#143e41;
+   animation: color-change 4s infinite;
+}
+
+.typewriter span{
+   color:#be107c;
+   font-size:120%;
+}
+
+.typewriter button {
+   color: white;
+   font-size: large;
+   padding:10px 40px;
+   background-color: #095e80;
+   border-color: #71C9CE;
+   box-shadow: 1px 5px 10px 0 #71C9CE;
+}
+
+.typewriter button:hover {
+   font-size: larger;
+   background-color: #2581a5;
+}
+
+/************* NAVBAR ***********/ 
+
+.navbar {
+   font-size:large;
+   font-weight: bold;
+   background-color:#e1f3f39d;
+   border-radius: 50px;
+}
+.navbar ul{
+   list-style-type: none;
+   display:flex;
+   padding-top: 15px;
+}
+
+.navbar ul li {
+   padding:3px 40px 0 45px;
+   color:#095e80;
+}
+
+/************* RUBBERBAND ANIMATION ************/
+
+.navbar ul li:hover {
+   animation: rubberBand linear 1s;
+   animation-iteration-count: 3;
+}
+
+#pic img:hover {
+   animation: rubberBand linear 1s;
+   animation-iteration-count: 1;
+}
+
+@keyframes rubberBand {
+   from {
+     transform: scale3d(1, 1, 1);
+   }
+ 
+   30% {
+     transform: scale3d(1.25, 0.75, 1);
+   }
+ 
+   40% {
+     transform: scale3d(0.75, 1.25, 1);
+   }
+ 
+   50% {
+     transform: scale3d(1.15, 0.85, 1);
+   }
+ 
+   65% {
+     transform: scale3d(.95, 1.05, 1);
+   }
+ 
+   75% {
+     transform: scale3d(1.05, .95, 1);
+   }
+ 
+   to {
+     transform: scale3d(1, 1, 1);
+   }
+ }
+
+ /********** COLORED WATCHIT TEXT ***********/
+
+#color {
+   color:#be107c;
+   font-weight: bolder;
+}
+
+/********* AFTER SIGNIN ************/
+
+/* .g-signin2 {
+   color: #be107c;
+} */
+
+/******************** SNOW ANIMATION CODE *************/
+
+.snow {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+}
+
+.snow .svg {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 45s infinite linear;
+}
+
+@keyframes fall {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+ /********** BOOTSTRAP ICONS *************/
+.bi {
+   color:#095e80; 
+   position: absolute;
+   font-size: large;
+   font-weight: bold;
+}
+
+.bi-info-circle-fill {
+   margin-top:0.28%;
+   left:20%;
+}
+
+.bi-list-check {
+   margin-top:0.295%;
+   left:32.7%;
+}
+
+.bi-people-fill {
+   margin-top:0.295%;
+   left:42%;
+}
+
+.bi-bar-chart-line-fill {
+   margin-top:0.295%;
+   left:53.5%;
+}
+
+.bi-bookmarks-fill {
+   margin-top:0.295%;
+   left:68.2%;
+}
+
+.bi-check-circle-fill {
+   margin-top:0.295%;
+   left:82%;
+   color: #be107c;
+}
+
+.bi-clock-history {
+   transform: rotate(30deg);
+   top:20%;
+   left:10%;
+   font-size: 300%;
+   opacity: 0.7;
+}
+
+.water1 {
+   transform: rotate(90deg);
+   top:0;
+   right: 20%;
+   font-size: 300%;
+   opacity: 0.8;
+}
+
+.water2 {
+   transform: rotate(180deg);
+   top: 40%;
+   right: 0;
+   font-size: 300%;
+   opacity: 0.7;
+}
+
+.water3 {
+   transform: rotate(-30deg);
+   top: 73%;
+   left: 38%;
+   font-size: 300%;
+   opacity: 0.7;
+}
+
+.bi-clock-history {
+   transform: rotate(20deg);
+   top: 27%;
+   left: 12%;
+   font-size: 300%;
+   opacity: 0.6;
+}
+
+.bi-arrow-repeat {
+   top: 28%;
+   right:10%;
+   font-size: 300%;
+   opacity: 1;
+   transform: rotate(35deg)
+}
