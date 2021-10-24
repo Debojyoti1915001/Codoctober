@@ -72,12 +72,14 @@ class GoogleCalendar extends Component {
   render () {
     const {events} = this.state;
     return (
+      //<div className="bodycalendar">
       <WeekView
         events={events}
         onNewEvent={this.addNewEvent}
         onEventUpdate={this.updateEvent}
         onEventDelete={this.deleteEvent}
       />
+     // </div>
     );
   }
 }

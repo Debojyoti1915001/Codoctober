@@ -90,7 +90,7 @@ export const lightHighlighter = {
 
 export const eventHighlighter = {
   position: 'absolute',
-  backgroundColor: '#b3e1f7',
+  backgroundColor: '#71C9CE',
   border: '1px solid #81cdf2',
   borderRadius: '4px',
   color: 'white',
